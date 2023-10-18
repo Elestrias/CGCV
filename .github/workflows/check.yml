@@ -20,6 +20,14 @@ jobs:
           .\build\Release\Rasterization.exe --model_path models\cube.obj --result_path rasterization_cube.png
           .\build\Release\Rasterization.exe --model_path models\z_test.obj --result_path rasterization_z_test.png
           .\build\Release\Rasterization.exe --model_path models\CornellBox-Original.obj --result_path rasterization_CornellBox-Original.png
+          
+          .\build\Release\Rasterization.exe --model_path models\cube.obj --result_path rasterization_cube_0.5.png --transparency 0.5
+          .\build\Release\Rasterization.exe --model_path models\z_test.obj --result_path rasterization_z_test_0.5.png --transparency 0.5
+          .\build\Release\Rasterization.exe --model_path models\CornellBox-Original.obj --result_path rasterization_CornellBox-Original_0.5.png --transparency 0.5
+          
+          .\build\Release\Rasterization.exe --model_path models\cube.obj --result_path rasterization_cube_0.1.png --transparency 0.1
+          .\build\Release\Rasterization.exe --model_path models\z_test.obj --result_path rasterization_z_test_0.1.png --transparency 0.1
+          .\build\Release\Rasterization.exe --model_path models\CornellBox-Original.obj --result_path rasterization_CornellBox-Original_0.1.png --transparency 0.1
       - name: Upload rasterization images
         uses: actions/upload-artifact@v3
         with:

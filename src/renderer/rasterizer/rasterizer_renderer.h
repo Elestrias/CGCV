@@ -19,5 +19,9 @@ namespace cg::renderer
 		std::shared_ptr<cg::resource<float>> depth_buffer;
 
 		std::shared_ptr<cg::renderer::rasterizer<cg::vertex, cg::unsigned_color>> rasterizer;
+
+		uint8_t backround_r;
+		uint8_t backround_g;
+		uint8_t backround_b;
 	};
 }// namespace cg::renderer
